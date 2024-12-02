@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #f5ce52;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+p {
+    display: flex;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+button {
+    color: white;
+    background: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 5px 12px;
+}
+
+.conversor-imagen {
+    margin-top: 200px;
+    width: 200px;
+    height: 150px;
+}
+
+.fromCurrency {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conversion-form {
+    padding: 10px 20px 10px 10px;
+    border: 1px solid #dedede;
+    font-size: 16px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.fromCurrency {
+    border: 0;
+    font-size: 30px;
+    text-align: right;
+}
+
+.toCurrency {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+@media (max-width:600px) {
+    .conversion-form {
+        width: 200px;
+    }
+
+}

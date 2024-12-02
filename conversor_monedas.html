@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Monedas</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <img src="assets/img/click.png" alt="" class="conversor-imagen">
+  <h1>Conversor de moneda</h1>
+  <p>Escoje la moneda y la cantidad para realizar la conversion</p>
+
+  <div class="container">
+
+    <div class="conversion-form">
+      <input type="number" id="amount" placeholder="Ingresa la cantidad" />
+
+      <select id="fromCurrency">
+        <option value="dolar">USD (Dólar)</option>
+        <option value="euro">EUR (Euro)</option>
+        <option value="peso_chileno">CLP (Peso Chileno)</option>
+      </select>
+
+      <select id="toCurrency">
+        <option value="dolar">USD (Dólar)</option>
+        <option value="euro">EUR (Euro)</option>
+        <option value="peso_chileno">CLP (Peso Chileno)</option>
+      </select>
+
+      <button id="convert">Convertir</button>
+    </div>
+
+    <p id="result">La conversión es :</p>
+
+    <div class="chart-container">
+      <canvas id="historyChart" width="800" height="400"></canvas>
+    </div>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
